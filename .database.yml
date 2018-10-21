@@ -1,0 +1,41 @@
+users:
+  Buddel:
+    username: Buddel
+    articleIds:
+      - 1
+    commentIds:
+      - 1
+      - 2
+articles:
+  '1':
+    id: 1
+    title: a
+    url: a url
+    username: Buddel
+    commentIds:
+      - 1
+      - 2
+    upvotedBy: []
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        body: a comment
+        username: Buddel
+        articleId: 1
+        upvotedBy:
+          - Buddel
+        downvotedBy: []
+      - &ref_1
+        id: 2
+        body: b comment
+        username: Buddel
+        articleId: 1
+        upvotedBy: []
+        downvotedBy:
+          - Buddel
+nextArticleId: 2
+comments:
+  '1': *ref_0
+  '2': *ref_1
+nextCommentId: 3
